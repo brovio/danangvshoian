@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { ChevronRight, MapPin, Info } from "lucide-react";
@@ -72,17 +71,11 @@ export const HeroSection = () => {
         <div className="bg-background/65 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0 shadow-lg">
           <h1 className="text-xl font-noto mb-2 font-semibold md:text-2xl text-zinc-700">INTRODUCING</h1>
           <div className="flex items-center justify-center mb-2">
-            <span className="text-5xl font-noto md:text-6xl font-extrabold tracking-tighter relative" style={{
-              WebkitTextStroke: "1px rgba(239, 68, 68, 0.7)"
-            }}>DA NANG</span>
-            <span className="text-5xl md:text-8xl font-black italic mx-0 text-red-500 relative" style={{
-              textShadow: "0 0 10px rgba(234, 56, 76, 0.5)",
-              animation: "shake 3s ease-in-out infinite",
-              WebkitTextStroke: "2px rgba(0, 0, 0, 0.8)"
-            }}>VS</span>
-            <span className="text-5xl font-noto font-black md:text-6xl tracking-tighter relative" style={{
-              WebkitTextStroke: "1px rgba(239, 68, 68, 0.7)"
-            }}>HOI AN</span>
+            <span className="text-5xl font-noto md:text-6xl font-extrabold">DA NANG</span>
+            <span className="text-5xl md:text-7xl font-black italic mx-3 text-red-500" style={{
+            textShadow: "0 0 10px rgba(234, 56, 76, 0.5)"
+          }}>VS</span>
+            <span className="text-5xl font-noto font-black md:text-6xl">HOI AN</span>
           </div>
           <p className="text-lg mt-3 font-noto text-zinc-600 font-medium md:text-xl">Explore and compare the best of both cities</p>
         </div>
