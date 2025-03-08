@@ -4,10 +4,13 @@ import { Menu, X } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { AnimatedLink } from "@/components/ui/AnimatedLink";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Top Listings", href: "#listings" },
+  { label: "Directory", href: "/directory" },
+  { label: "Da Nang", href: "/city/Da Nang" },
+  { label: "Hoi An", href: "/city/Hoi An" },
   { label: "Reviews", href: "#reviews" },
   { label: "Games", href: "#games" },
 ];
@@ -38,18 +41,30 @@ export const NavBar = () => {
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex items-center justify-between">
-          <Logo className="relative z-10" />
+          <Link to="/">
+            <Logo className="relative z-10" />
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <AnimatedLink
-                key={item.label}
-                href={item.href}
-                className="text-foreground/80 hover:text-foreground font-medium transition-colors"
-              >
-                {item.label}
-              </AnimatedLink>
+              item.href.startsWith('/') ? (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="text-foreground/80 hover:text-foreground font-medium transition-colors hover-underline-animation"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <AnimatedLink
+                  key={item.label}
+                  href={item.href}
+                  className="text-foreground/80 hover:text-foreground font-medium transition-colors"
+                >
+                  {item.label}
+                </AnimatedLink>
+              )
             ))}
           </nav>
 
@@ -75,15 +90,26 @@ export const NavBar = () => {
         )}
       >
         <div className="flex flex-col items-center justify-center h-full gap-8 stagger-animation">
-          {navItems.map((item, index) => (
-            <AnimatedLink
-              key={item.label}
-              href={item.href}
-              className="text-foreground text-2xl font-medium hover:text-primary animate-fade-in"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {item.label}
-            </AnimatedLink>
+          {navItems.map((item) => (
+            item.href.startsWith('/') ? (
+              <Link
+                key={item.label}
+                to={item.href}
+                className="text-foreground text-2xl font-medium hover:text-primary animate-fade-in"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <AnimatedLink
+                key={item.label}
+                href={item.href}
+                className="text-foreground text-2xl font-medium hover:text-primary animate-fade-in"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </AnimatedLink>
+            )
           ))}
         </div>
       </div>
