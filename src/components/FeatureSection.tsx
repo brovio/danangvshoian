@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from "react";
-import { Card, CardMedia, CardHeader, CardContent, CardFooter } from "@/components/ui/Card";
+import { Card, CardMedia, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { CategoryTag } from "@/components/ui/CategoryTag";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { Coffee, Scissors, Utensils, Building, Hotel, Mountain } from "lucide-react";
