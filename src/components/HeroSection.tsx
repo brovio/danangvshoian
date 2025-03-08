@@ -72,8 +72,8 @@ export const HeroSection = () => {
         <div className="bg-background/65 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0 shadow-lg">
           <h1 className="text-xl font-noto mb-2 font-semibold md:text-2xl text-zinc-700">INTRODUCING</h1>
           <div className="relative flex items-center justify-center mb-2">
-            <div className="flex w-full relative" style={{ height: "80px" }}>
-              {/* DA NANG - positioned more to the left */}
+            <div className="flex w-full relative" style={{ width: "500px", height: "80px" }}>
+              {/* DA NANG - positioned at the left edge */}
               <span className="text-5xl font-noto md:text-6xl font-extrabold uppercase tracking-tighter absolute left-0" style={{
                 textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
               }}>DA NANG</span>
@@ -87,7 +87,7 @@ export const HeroSection = () => {
                 }}>VS</span>
               </div>
               
-              {/* HOI AN - positioned more to the right */}
+              {/* HOI AN - positioned at the right edge */}
               <span className="text-5xl font-noto font-extrabold md:text-6xl uppercase tracking-tighter absolute right-0" style={{
                 textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
               }}>HOI AN</span>
