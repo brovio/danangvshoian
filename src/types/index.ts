@@ -23,3 +23,22 @@ export interface CategoryDefinition {
   icon: ReactNode;
   description: string;
 }
+
+export interface CreditAction {
+  id: string;
+  title: string;
+  description: string;
+  creditAmount: number;
+  type: 'earn' | 'spend';
+  category: CreditCategory;
+  icon: ReactNode;
+}
+
+export type CreditCategory = 
+  | 'engagement'
+  | 'social'
+  | 'content'
+  | 'business'
+  | 'premium'
+  | 'special'
+  | 'unlock';

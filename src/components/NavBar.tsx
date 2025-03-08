@@ -1,10 +1,11 @@
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Award } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { AnimatedLink } from "@/components/ui/AnimatedLink";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import { CTAButton } from "@/components/ui/CTAButton";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -46,7 +47,7 @@ export const NavBar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               item.href.startsWith('/') ? (
                 <Link
@@ -66,6 +67,16 @@ export const NavBar = () => {
                 </AnimatedLink>
               )
             ))}
+            <Link to="/play-to-win" className="ml-2">
+              <CTAButton 
+                variant="primary" 
+                size="md"
+                className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                <Award className="w-4 h-4" />
+                Play to Win
+              </CTAButton>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -111,6 +122,20 @@ export const NavBar = () => {
               </AnimatedLink>
             )
           ))}
+          <Link
+            to="/play-to-win"
+            className="text-foreground text-2xl font-medium animate-fade-in mt-4"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <CTAButton 
+              variant="primary" 
+              size="lg"
+              className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700"
+            >
+              <Award className="w-5 h-5" />
+              Play to Win
+            </CTAButton>
+          </Link>
         </div>
       </div>
     </header>
