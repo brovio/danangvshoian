@@ -72,7 +72,7 @@ export const HeroSection = () => {
         <div className="bg-background/65 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0 shadow-lg">
           <h1 className="text-xl font-noto mb-2 font-semibold md:text-2xl text-zinc-700">INTRODUCING</h1>
           <div className="relative flex items-center justify-center mb-2">
-            <div className="relative mx-auto" style={{ width: "600px", height: "80px" }}>
+            <div className="relative mx-auto" style={{ width: "700px", height: "80px" }}>
               {/* VS centered as the anchor point */}
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <span className="text-6xl md:text-7xl font-black italic text-red-500" style={{
@@ -82,9 +82,9 @@ export const HeroSection = () => {
                 }}>VS</span>
               </div>
               
-              {/* DA NANG - moved 15px to the left for better spacing */}
+              {/* DA NANG - positioned further to the left */}
               <div className="absolute" style={{ 
-                left: "15px", 
+                left: "75px", 
                 top: "50%", 
                 transform: "translateY(-50%)"
               }}>
@@ -93,9 +93,9 @@ export const HeroSection = () => {
                 }}>DA NANG</span>
               </div>
               
-              {/* HOI AN - moved 5px to the right for better spacing */}
+              {/* HOI AN - positioned further to the right */}
               <div className="absolute" style={{
-                right: "25px",
+                right: "75px",
                 top: "50%",
                 transform: "translateY(-50%)"
               }}>
