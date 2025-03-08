@@ -75,19 +75,17 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Overlay Title with VS in center */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center w-full px-4">
+      {/* Overlay Title with VS in center - moved higher up */}
+      <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center w-full px-4">
         <div className="bg-background/80 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0">
-          <h1 className="text-3xl md:text-5xl font-bold mb-3">Discover</h1>
+          <h1 className="text-3xl md:text-5xl font-bold mb-3">Introducing</h1>
           <div className="flex items-center justify-center">
-            <span className="text-3xl md:text-5xl font-bold">Da Nang</span>
-            <span className="text-3xl md:text-5xl font-bold mx-3 text-primary font-display" style={{ 
-              fontFamily: "'Plus Jakarta Sans', sans-serif", 
-              fontWeight: 800,
-              textShadow: "0 0 10px rgba(14, 165, 233, 0.5)",
-              color: "#8B5CF6" 
+            <span className="text-3xl md:text-5xl font-bold font-bangers">Da Nang</span>
+            <span className="text-3xl md:text-5xl font-bold mx-3 font-bangers" style={{ 
+              color: "#ea384c", 
+              textShadow: "0 0 10px rgba(234, 56, 76, 0.5)",
             }}>VS</span>
-            <span className="text-3xl md:text-5xl font-bold">Hoi An</span>
+            <span className="text-3xl md:text-5xl font-bold font-bangers">Hoi An</span>
           </div>
           <p className="text-muted-foreground text-base md:text-lg mt-3">Explore and compare the best of both cities</p>
         </div>

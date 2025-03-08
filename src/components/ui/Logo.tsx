@@ -7,7 +7,7 @@ interface LogoProps {
 
 export const Logo = ({ className }: LogoProps) => {
   return (
-    <div className={cn("font-display text-xl font-semibold", className)}>
+    <div className={cn("font-bangers text-xl", className)}>
       <span className="text-foreground">Da Nang</span>
       <span className="text-primary"> Vs </span>
       <span className="text-foreground">Hoi An</span>
