@@ -82,9 +82,9 @@ export const HeroSection = () => {
                 }}>VS</span>
               </div>
               
-              {/* DA NANG - positioned with better spacing from VS */}
+              {/* DA NANG - moved 15px to the left for better spacing */}
               <div className="absolute" style={{ 
-                left: "30px", 
+                left: "15px", 
                 top: "50%", 
                 transform: "translateY(-50%)"
               }}>
@@ -93,9 +93,9 @@ export const HeroSection = () => {
                 }}>DA NANG</span>
               </div>
               
-              {/* HOI AN - positioned with better spacing from VS */}
+              {/* HOI AN - moved 5px to the right for better spacing */}
               <div className="absolute" style={{
-                right: "30px",
+                right: "25px",
                 top: "50%",
                 transform: "translateY(-50%)"
               }}>
