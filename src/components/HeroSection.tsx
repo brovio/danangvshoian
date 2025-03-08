@@ -40,7 +40,7 @@ export const HeroSection = () => {
           <div 
             className="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 hover:scale-105"
             style={{ 
-              backgroundImage: `url('https://images.unsplash.com/photo-1579330643216-0cf269282a6e?q=80&w=1935&auto=format&fit=crop')`,
+              backgroundImage: `url('https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=2070&auto=format&fit=crop')`,
               backgroundPosition: "center" 
             }}
           />
@@ -61,7 +61,7 @@ export const HeroSection = () => {
           <div 
             className="absolute inset-0 bg-cover bg-center transform transition-transform duration-700 hover:scale-105"
             style={{ 
-              backgroundImage: `url('https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?q=80&w=2076&auto=format&fit=crop')`,
+              backgroundImage: `url('https://images.unsplash.com/photo-1583417319070-4a69db38a482?q=80&w=2070&auto=format&fit=crop')`,
               backgroundPosition: "center" 
             }}
           />

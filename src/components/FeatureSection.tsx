@@ -10,7 +10,7 @@ const features = [
     id: 1,
     title: "Top Coffee Shops",
     icon: <Coffee size={18} />,
-    image: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=2940&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1580437082423-4f0e58a2aae8?q=80&w=2187&auto=format&fit=crop",
     description: "Discover the best cafes offering local Vietnamese coffee with unique atmospheres.",
     city: "Hoi An"
   },
@@ -18,7 +18,7 @@ const features = [
     id: 2,
     title: "Best Tailors",
     icon: <Scissors size={18} />,
-    image: "https://images.unsplash.com/photo-1590333748338-d629e4564ad9?q=80&w=2874&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1610631087218-fb27ade3e7fc?q=80&w=2070&auto=format&fit=crop",
     description: "Expert tailors creating custom clothing with quality fabrics and attention to detail.",
     city: "Hoi An"
   },
@@ -26,7 +26,7 @@ const features = [
     id: 3,
     title: "Food Adventures",
     icon: <Utensils size={18} />,
-    image: "https://images.unsplash.com/photo-1583385799880-08afd9370510?q=80&w=2874&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1583385898725-7ef62a70dc76?q=80&w=2068&auto=format&fit=crop",
     description: "Experience the best local street food and authentic Vietnamese cuisine.",
     city: "Da Nang"
   },
@@ -34,7 +34,7 @@ const features = [
     id: 4,
     title: "Modern Architecture",
     icon: <Building size={18} />,
-    image: "https://images.unsplash.com/photo-1558749636-e1b31deb62c8?q=80&w=2862&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1599716290023-117f4e1bd395?q=80&w=2070&auto=format&fit=crop",
     description: "Explore Da Nang's iconic bridges and contemporary architectural masterpieces.",
     city: "Da Nang"
   },
@@ -42,7 +42,7 @@ const features = [
     id: 5,
     title: "Luxury Resorts",
     icon: <Hotel size={18} />,
-    image: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?q=80&w=3087&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2080&auto=format&fit=crop",
     description: "Relax in world-class beachfront resorts with stunning views and premium amenities.",
     city: "Da Nang"
   },
@@ -50,7 +50,7 @@ const features = [
     id: 6,
     title: "Natural Wonders",
     icon: <Mountain size={18} />,
-    image: "https://images.unsplash.com/photo-1516690553959-71a414d7d9c9?q=80&w=3087&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1531737212413-667205e1cda7?q=80&w=2074&auto=format&fit=crop",
     description: "Discover breathtaking mountains, beaches, and natural attractions in the region.",
     city: "Both"
   }
