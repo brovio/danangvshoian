@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from "react";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { ChevronRight, MapPin, Info } from "lucide-react";
@@ -71,19 +72,26 @@ export const HeroSection = () => {
         <div className="bg-background/65 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0 shadow-lg">
           <h1 className="text-xl font-noto mb-2 font-semibold md:text-2xl text-zinc-700">INTRODUCING</h1>
           <div className="relative flex items-center justify-center mb-2">
-            <span className="text-5xl font-noto md:text-6xl font-extrabold uppercase tracking-tighter absolute left-0" style={{
-              textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
-            }}>DA NANG</span>
-            <div className="absolute left-1/2 transform -translate-x-1/2">
-              <span className="text-6xl md:text-7xl font-black italic text-red-500" style={{
-                textShadow: "0 0 2px #000000e6",
-                animation: "shake 3s ease-in-out infinite", 
-                WebkitTextStroke: "2px #000000e6"
-              }}>VS</span>
+            <div className="flex w-full relative" style={{ height: "80px" }}>
+              {/* DA NANG - positioned more to the left */}
+              <span className="text-5xl font-noto md:text-6xl font-extrabold uppercase tracking-tighter absolute left-0" style={{
+                textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
+              }}>DA NANG</span>
+              
+              {/* VS - centered */}
+              <div className="absolute left-1/2 transform -translate-x-1/2">
+                <span className="text-6xl md:text-7xl font-black italic text-red-500" style={{
+                  textShadow: "0 0 2px #000000e6",
+                  animation: "shake 3s ease-in-out infinite", 
+                  WebkitTextStroke: "2px #000000e6"
+                }}>VS</span>
+              </div>
+              
+              {/* HOI AN - positioned more to the right */}
+              <span className="text-5xl font-noto font-extrabold md:text-6xl uppercase tracking-tighter absolute right-0" style={{
+                textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
+              }}>HOI AN</span>
             </div>
-            <span className="text-5xl font-noto font-extrabold md:text-6xl uppercase tracking-tighter absolute right-0" style={{
-              textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
-            }}>HOI AN</span>
           </div>
           <p className="text-lg mt-3 font-noto text-zinc-600 font-medium md:text-xl">Explore and compare the best of both cities</p>
         </div>
