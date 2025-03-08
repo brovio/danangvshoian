@@ -72,14 +72,9 @@ export const HeroSection = () => {
         <div className="bg-background/65 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0 shadow-lg">
           <h1 className="text-xl font-noto mb-2 font-semibold md:text-2xl text-zinc-700">INTRODUCING</h1>
           <div className="relative flex items-center justify-center mb-2">
-            <div className="flex w-full relative" style={{ width: "500px", height: "80px" }}>
-              {/* DA NANG - positioned at the left edge */}
-              <span className="text-5xl font-noto md:text-6xl font-extrabold uppercase tracking-tighter absolute left-0" style={{
-                textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
-              }}>DA NANG</span>
-              
-              {/* VS - centered */}
-              <div className="absolute left-1/2 transform -translate-x-1/2">
+            <div className="relative mx-auto" style={{ width: "500px", height: "80px" }}>
+              {/* VS centered as the anchor point */}
+              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <span className="text-6xl md:text-7xl font-black italic text-red-500" style={{
                   textShadow: "0 0 2px #000000e6",
                   animation: "shake 3s ease-in-out infinite", 
@@ -87,10 +82,27 @@ export const HeroSection = () => {
                 }}>VS</span>
               </div>
               
-              {/* HOI AN - positioned at the right edge */}
-              <span className="text-5xl font-noto font-extrabold md:text-6xl uppercase tracking-tighter absolute right-0" style={{
-                textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
-              }}>HOI AN</span>
+              {/* DA NANG - positioned so G aligns with left arrow point */}
+              <div className="absolute" style={{ 
+                left: "72px", 
+                top: "50%", 
+                transform: "translateY(-50%)"
+              }}>
+                <span className="text-5xl font-noto md:text-6xl font-extrabold uppercase tracking-tighter" style={{
+                  textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
+                }}>DA NANG</span>
+              </div>
+              
+              {/* HOI AN - positioned so H aligns with right arrow point */}
+              <div className="absolute" style={{
+                right: "67px",
+                top: "50%",
+                transform: "translateY(-50%)"
+              }}>
+                <span className="text-5xl font-noto font-extrabold md:text-6xl uppercase tracking-tighter" style={{
+                  textShadow: "0 0 1px rgba(234, 56, 76, 0.7)",
+                }}>HOI AN</span>
+              </div>
             </div>
           </div>
           <p className="text-lg mt-3 font-noto text-zinc-600 font-medium md:text-xl">Explore and compare the best of both cities</p>
