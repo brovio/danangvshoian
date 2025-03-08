@@ -69,13 +69,13 @@ export const HeroSection = () => {
       {/* Overlay Title with VS in center - moved higher up */}
       <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center w-full px-4">
         <div className="bg-background/65 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0 shadow-lg">
-          <h1 className="text-xl font-noto mb-2 font-semibold text-zinc-500 md:text-4xl">Introducing</h1>
+          <h1 className="text-xl font-noto mb-2 font-semibold md:text-2xl text-zinc-700">INTRODUCING</h1>
           <div className="flex items-center justify-center mb-2">
-            <span className="text-5xl font-noto font-black italic md:text-6xl">Da Nang</span>
+            <span className="text-5xl font-noto md:text-6xl font-extrabold">DA NANG</span>
             <span className="text-5xl md:text-7xl font-black italic mx-3 text-red-500" style={{
             textShadow: "0 0 10px rgba(234, 56, 76, 0.5)"
           }}>VS</span>
-            <span className="text-5xl font-noto font-black italic md:text-6xl">Hoi An</span>
+            <span className="text-5xl font-noto font-black md:text-6xl">HOI AN</span>
           </div>
           <p className="text-lg mt-3 font-noto text-zinc-600 font-medium md:text-xl">Explore and compare the best of both cities</p>
         </div>
