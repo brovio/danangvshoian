@@ -86,15 +86,16 @@ export const HeroSection = () => {
       {/* Overlay Title with VS in center - moved higher up */}
       <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center w-full px-4">
         <div className="bg-background/65 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0 shadow-lg">
-          <h1 className="text-xl md:text-2xl font-noto font-medium italic mb-2 text-muted-foreground">Introducing</h1>
+          <h1 className="text-xl md:text-2xl font-noto font-medium mb-2 text-muted-foreground">Introducing</h1>
           <div className="flex items-center justify-center mb-2">
-            <span className="text-5xl md:text-7xl font-noto font-black italic">Da Nang</span>
-            <span className="text-5xl md:text-7xl font-black italic mx-3 text-red-500" style={{ 
+            <span className="text-6xl md:text-8xl font-noto font-black tracking-tighter">DA NANG</span>
+            <span className="text-6xl md:text-8xl font-black tracking-tighter mx-0 text-red-500" style={{ 
               textShadow: "0 0 10px rgba(234, 56, 76, 0.5)",
+              animation: "shake 3s ease-in-out infinite",
             }}>VS</span>
-            <span className="text-5xl md:text-7xl font-noto font-black italic">Hoi An</span>
+            <span className="text-6xl md:text-8xl font-noto font-black tracking-tighter">HOI AN</span>
           </div>
-          <p className="text-muted-foreground text-lg md:text-xl mt-3 font-noto">Explore and compare the best of both cities</p>
+          <p className="text-muted-foreground text-xl md:text-2xl mt-3 font-noto">Explore and compare the best of both cities</p>
         </div>
       </div>
     </div>
