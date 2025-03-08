@@ -75,7 +75,7 @@ export const HeroSection = () => {
             <span className="text-5xl md:text-7xl font-black italic mx-3 text-red-500" style={{
             textShadow: "0 0 10px rgba(234, 56, 76, 0.5)"
           }}>VS</span>
-            <span className="text-5xl md:text-7xl font-noto font-black italic">Hoi An</span>
+            <span className="text-5xl font-noto font-black italic md:text-6xl">Hoi An</span>
           </div>
           <p className="text-muted-foreground text-lg md:text-xl mt-3 font-noto">Explore and compare the best of both cities</p>
         </div>
