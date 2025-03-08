@@ -19,9 +19,10 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
-				display: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
-				bungee: ['Bungee', 'cursive']
+				sans: ['Noto Sans', 'Inter', 'system-ui', 'sans-serif'],
+				display: ['Noto Sans', 'system-ui', 'sans-serif'],
+				bungee: ['Bungee', 'cursive'],
+				noto: ['Noto Sans', 'system-ui', 'sans-serif']
 			},
 			colors: {
 				border: 'hsl(var(--border))',

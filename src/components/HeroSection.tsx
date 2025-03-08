@@ -1,7 +1,7 @@
 
 import { useEffect, useRef } from "react";
 import { CTAButton } from "@/components/ui/CTAButton";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, MapPin, Info } from "lucide-react";
 
 export const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -45,9 +45,13 @@ export const HeroSection = () => {
           <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]"></div>
           <div className="relative h-full flex flex-col justify-end p-8 md:p-12 z-10">
             <div className="animate-on-scroll opacity-0">
-              <h2 className="text-white text-3xl md:text-5xl font-bold mb-3">Da Nang</h2>
-              <p className="text-white/90 text-lg mb-6 max-w-md">Modern coastal city with breathtaking bridges and mountain views.</p>
-              <CTAButton variant="primary" className="mb-8">
+              <h2 className="text-white text-3xl md:text-5xl font-noto font-semibold mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">Da Nang</h2>
+              <p className="text-white/90 text-lg mb-6 max-w-md drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">Modern coastal city with breathtaking bridges and mountain views.</p>
+              <CTAButton 
+                variant="primary" 
+                className="mb-8 bg-primary hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2"
+              >
+                <MapPin size={16} className="mr-1" />
                 Explore Da Nang <ChevronRight size={16} className="ml-1" />
               </CTAButton>
             </div>
@@ -65,9 +69,13 @@ export const HeroSection = () => {
           <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]"></div>
           <div className="relative h-full flex flex-col justify-end p-8 md:p-12 z-10">
             <div className="animate-on-scroll opacity-0">
-              <h2 className="text-white text-3xl md:text-5xl font-bold mb-3">Hoi An</h2>
-              <p className="text-white/90 text-lg mb-6 max-w-md">Ancient charm and lantern-lit streets in a UNESCO heritage town.</p>
-              <CTAButton variant="primary" className="mb-8">
+              <h2 className="text-white text-3xl md:text-5xl font-noto font-semibold mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">Hoi An</h2>
+              <p className="text-white/90 text-lg mb-6 max-w-md drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">Ancient charm and lantern-lit streets in a UNESCO heritage town.</p>
+              <CTAButton 
+                variant="primary" 
+                className="mb-8 bg-primary hover:bg-primary/90 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2"
+              >
+                <MapPin size={16} className="mr-1" />
                 Explore Hoi An <ChevronRight size={16} className="ml-1" />
               </CTAButton>
             </div>
@@ -77,17 +85,16 @@ export const HeroSection = () => {
 
       {/* Overlay Title with VS in center - moved higher up */}
       <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center w-full px-4">
-        <div className="bg-background/80 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0">
-          <h1 className="text-xl md:text-2xl font-medium italic mb-2 text-muted-foreground">Introducing</h1>
+        <div className="bg-background/65 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0 shadow-lg">
+          <h1 className="text-xl md:text-2xl font-noto font-medium italic mb-2 text-muted-foreground">Introducing</h1>
           <div className="flex items-center justify-center mb-2">
-            <span className="text-4xl md:text-6xl font-bold font-bungee">DA NANG</span>
-            <span className="text-4xl md:text-6xl font-bold mx-3 font-bungee" style={{ 
-              color: "#ea384c", 
+            <span className="text-4xl md:text-6xl font-noto font-bold">DA NANG</span>
+            <span className="text-4xl md:text-6xl font-bold mx-3 text-red-500" style={{ 
               textShadow: "0 0 10px rgba(234, 56, 76, 0.5)",
             }}>VS</span>
-            <span className="text-4xl md:text-6xl font-bold font-bungee">HOI AN</span>
+            <span className="text-4xl md:text-6xl font-noto font-bold">HOI AN</span>
           </div>
-          <p className="text-muted-foreground text-base md:text-lg mt-3">Explore and compare the best of both cities</p>
+          <p className="text-muted-foreground text-lg md:text-xl mt-3 font-noto">Explore and compare the best of both cities</p>
         </div>
       </div>
     </div>
