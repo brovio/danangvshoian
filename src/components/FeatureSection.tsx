@@ -10,7 +10,7 @@ const features = [
     id: 1,
     title: "Top Coffee Shops",
     icon: <Coffee size={18} />,
-    image: "https://images.unsplash.com/photo-1580437082423-4f0e58a2aae8?q=80&w=2187&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2847&auto=format&fit=crop",
     description: "Discover the best cafes offering local Vietnamese coffee with unique atmospheres.",
     city: "Hoi An"
   },
@@ -18,7 +18,7 @@ const features = [
     id: 2,
     title: "Best Tailors",
     icon: <Scissors size={18} />,
-    image: "https://images.unsplash.com/photo-1610631087218-fb27ade3e7fc?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1612296727716-d6c69d2a2cbb?q=80&w=2787&auto=format&fit=crop",
     description: "Expert tailors creating custom clothing with quality fabrics and attention to detail.",
     city: "Hoi An"
   },
@@ -26,7 +26,7 @@ const features = [
     id: 3,
     title: "Food Adventures",
     icon: <Utensils size={18} />,
-    image: "https://images.unsplash.com/photo-1583385898725-7ef62a70dc76?q=80&w=2068&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1547496502-affa22d38842?q=80&w=2677&auto=format&fit=crop",
     description: "Experience the best local street food and authentic Vietnamese cuisine.",
     city: "Da Nang"
   },
@@ -34,7 +34,7 @@ const features = [
     id: 4,
     title: "Modern Architecture",
     icon: <Building size={18} />,
-    image: "https://images.unsplash.com/photo-1599716290023-117f4e1bd395?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1565026057757-0a6439abc98c?q=80&w=2746&auto=format&fit=crop",
     description: "Explore Da Nang's iconic bridges and contemporary architectural masterpieces.",
     city: "Da Nang"
   },
@@ -125,13 +125,13 @@ export const FeatureSection = () => {
                       {feature.city}
                     </CategoryTag>
                   </div>
-                  <h3 className="text-xl font-semibold">{feature.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{feature.title}</h3>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <p className="text-gray-700 dark:text-gray-300">{feature.description}</p>
                 </CardContent>
                 <CardFooter className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">12 locations</span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">12 locations</span>
                   <CTAButton variant="outline" size="sm">View All</CTAButton>
                 </CardFooter>
               </Card>

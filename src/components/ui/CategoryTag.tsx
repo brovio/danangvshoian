@@ -8,7 +8,7 @@ interface CategoryTagProps {
 
 export const CategoryTag = ({ children, className }: CategoryTagProps) => {
   return (
-    <div className={cn("inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-accent text-primary-foreground", className)}>
+    <div className={cn("inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-accent text-foreground", className)}>
       {children}
     </div>
   );
