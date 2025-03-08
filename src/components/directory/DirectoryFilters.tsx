@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Check, ChevronsUpDown, Search } from "lucide-react";
 import { City } from "@/types";
-import { categories } from "@/data/directory-data";
+import { categories } from "@/data/directory-data.tsx";
 
 interface DirectoryFiltersProps {
   onCityChange: (city: City | null) => void;

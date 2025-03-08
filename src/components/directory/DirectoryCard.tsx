@@ -4,7 +4,7 @@ import { CategoryTag } from "@/components/ui/CategoryTag";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { Star } from "lucide-react";
 import { DirectoryItem } from "@/types";
-import { categories } from "@/data/directory-data";
+import { categories } from "@/data/directory-data.tsx";
 
 interface DirectoryCardProps {
   item: DirectoryItem;

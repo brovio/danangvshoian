@@ -1,4 +1,6 @@
 
+import { ReactNode } from 'react';
+
 // Common types used across the application
 
 export type City = "Da Nang" | "Hoi An" | "Both";
@@ -18,6 +20,6 @@ export interface DirectoryItem {
 export interface CategoryDefinition {
   id: string;
   name: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   description: string;
 }

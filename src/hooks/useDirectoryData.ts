@@ -1,6 +1,5 @@
-
 import { useState, useMemo } from 'react';
-import { directoryItems, categories } from '@/data/directory-data';
+import { directoryItems, categories } from '@/data/directory-data.tsx';
 import { DirectoryItem, City, CategoryDefinition } from '@/types';
 
 interface DirectoryFilters {

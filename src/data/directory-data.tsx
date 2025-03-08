@@ -1,6 +1,7 @@
 
-import { Coffee, Scissors, Utensils, Building, Hotel, Mountain, Camera, Shirt, ShoppingBag, User, Map, Umbrella } from "lucide-react";
+import { Coffee, Scissors, Utensils, Building, Hotel, Mountain, Camera, ShoppingBag } from "lucide-react";
 import { DirectoryItem, CategoryDefinition } from "@/types";
+import React from 'react';
 
 // Categories definition
 export const categories: CategoryDefinition[] = [
