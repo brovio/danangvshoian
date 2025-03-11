@@ -2,8 +2,10 @@
 import { useEffect, useRef } from "react";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { ChevronRight, MapPin, Info } from "lucide-react";
+
 export const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -14,11 +16,13 @@ export const HeroSection = () => {
     }, {
       threshold: 0.1
     });
+    
     const container = containerRef.current;
     if (container) {
       const elements = container.querySelectorAll('.animate-on-scroll');
       elements.forEach(el => observer.observe(el));
     }
+    
     return () => {
       if (container) {
         const elements = container.querySelectorAll('.animate-on-scroll');
@@ -26,6 +30,7 @@ export const HeroSection = () => {
       }
     };
   }, []);
+  
   return <div ref={containerRef} className="relative pt-20 overflow-hidden">
       <div className="flex flex-col md:flex-row h-[90vh] min-h-[500px]">
         {/* Da Nang Side - Now on the left */}
@@ -72,8 +77,8 @@ export const HeroSection = () => {
         <div className="bg-background/65 backdrop-blur-md py-6 px-8 rounded-xl inline-block animate-on-scroll opacity-0 shadow-lg">
           <h1 className="text-xl font-noto mb-2 font-semibold md:text-2xl text-zinc-700">INTRODUCING</h1>
           
-          {/* New grid layout for perfect centering of VS with equal spacing */}
-          <div className="grid grid-cols-[1fr_auto_1fr] items-center w-[700px] max-w-full mx-auto">
+          {/* Grid layout with increased width from 700px to 800px */}
+          <div className="grid grid-cols-[1fr_auto_1fr] items-center w-[800px] max-w-full mx-auto">
             <span className="text-5xl font-noto md:text-6xl font-extrabold text-right pr-6">DA NANG</span>
             <span className="text-5xl md:text-7xl font-black italic text-red-500 px-6" style={{
               textShadow: "0 0 10px rgba(234, 56, 76, 0.5)"
